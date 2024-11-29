@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approach Practice Guide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .secondary-btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .section-btn {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .section-btn:hover {
+            background: #f5f5f5;
+            transform: translateX(5px);
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .example-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .tip-box {
+            background: #e8f4ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #3b82f6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Approach Guide (2024)</h1>
+        <div class="subtitle">Master the art of genuine conversation openers</div>
+        
+        <div class="nav-buttons">
+            <button class="primary-btn" onclick="showAll()">View All</button>
+            <button class="secondary-btn" onclick="showDirectApproach()">Direct Approach</button>
+            <button class="secondary-btn" onclick="showIndirectApproach()">Indirect Approach</button>
+        </div>
+
+        <!-- Direct Approach Section -->
+        <button class="section-btn" onclick="toggleSection('direct-structure')">The Direct Approach Structure</button>
+        <div id="direct-structure" class="content">
+            <h3>The Five Elements:</h3>
+            <ul>
+                <li>The Hello: Simple greeting with eye contact</li>
+                <li>The Observation: Comment on something specific</li>
+                <li>The Why: Share your genuine reason for approaching</li>
+                <li>The Introduction: State your name clearly</li>
+                <li>The Lead: Open-ended question</li>
+            </ul>
+            <div class="example-box">
+                <strong>Example:</strong><br>
+                "Hey! [wait for eye contact]<br>
+                I noticed you checking out the bookshelf.<br>
+                I'm a huge reader myself and wanted to say hi.<br>
+                I'm Sarah.<br>
+                What kind of books do you enjoy?"
+            </div>
+            <div class="tip-box">
+                <strong>Key Tips:</strong>
+                <ul>
+                    <li>Wait for eye contact before continuing</li>
+                    <li>Keep your body language open and relaxed</li>
+                    <li>Speak clearly and at a good volume</li>
+                    <li>Be genuine in your observation</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="section-btn" onclick="toggleSection('indirect-structure')">The Indirect Approach Structure</button>
+        <div id="indirect-structure" class="content">
+            <h3>Key Elements:</h3>
+            <ul>
+                <li>Situational Observation</li>
+                <li>Playful Comment or Question</li>
+                <li>Natural Transition</li>
+            </ul>
+            <div class="example-box">
+                <strong>Examples:</strong>
+                <ul>
+                    <li>"I wonder what the owner's favorite color is?" (in an overtly red bar)</li>
+                    <li>"You'd make for a terrible ninja today!" (to someone with loud shoes)</li>
+                    <li>"I think the bartender is trying to get me drunk! Is yours this strong?"</li>
+                </ul>
+            </div>
+            <div class="tip-box">
+                <strong>Key Tips:</strong>
+                <ul>
+                    <li>Use the environment for natural conversation starters</li>
+                    <li>Keep it light and playful</li>
+                    <li>Allow for easy exit if they're not interested</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="section-btn" onclick="toggleSection('group-approach')">Group Approach Strategies</button>
+        <div id="group-approach" class="content">
+            <h3>Key Principles:</h3>
+            <ul>
+                <li>Wait for natural openings in the group's dynamic</li>
+                <li>Read the group's energy level</li>
+                <li>Address the group as a whole initially</li>
+            </ul>
+            <div class="example-box">
+                <strong>Example:</strong><br>
+                "Hey everyone! I saw you all laughing over here and you looked like the most fun group at the event. I had to come say hi. I'm Eric. What are you all celebrating?"
+            </div>
+        </div>
+
+        <button class="section-btn" onclick="toggleSection('body-language')">Body Language & Presence</button>
+        <div id="body-language" class="content">
+            <h3>Essential Elements:</h3>
+            <ul>
+                <li>Relaxed shoulders and open posture</li>
+                <li>Natural eye contact (70-80% while listening)</li>
+                <li>Appropriate distance (respect personal space)</li>
+                <li>Genuine smile</li>
+            </ul>
+            <div class="tip-box">
+                <strong>The Car Analogy:</strong>
+                <ul>
+                    <li>High Beams: Eye contact intensity</li>
+                    <li>Low Beams: Chest direction and openness</li>
+                    <li>Horn: Voice tone and volume</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="section-btn" onclick="toggleSection('recovery')">Recovery & Exit Strategies</button>
+        <div id="recovery" class="content">
+            <h3>If They're Not Receptive:</h3>
+            <div class="example-box">
+                "I see. Well, I'm still glad I came over and said hi. I was drawn towards you for some reason. I hope you have a great evening."
+            </div>
+            <div class="tip-box">
+                <strong>Remember:</strong>
+                <ul>
+                    <li>Exit gracefully</li>
+                    <li>Maintain your composure</li>
+                    <li>Keep it positive</li>
+                    <li>Learn from each interaction</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            $('#' + id).slideToggle();
+        }
+
+        function showAll() {
+            $('.content').slideDown();
+        }
+
+        function showDirectApproach() {
+            $('.content').slideUp();
+            $('#direct-structure').slideDown();
+            $('#body-language').slideDown();
+        }
+
+        function showIndirectApproach() {
+            $('.content').slideUp();
+            $('#indirect-structure').slideDown();
+            $('#group-approach').slideDown();
+        }
+    </script>
+</body>
+</html>
